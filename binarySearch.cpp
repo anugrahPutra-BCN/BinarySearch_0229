@@ -62,6 +62,33 @@ void BinarySearch()
             
             cout << "\nContinue search (y/n): ";
             cin >> ch;
-    } while  ((ch =='y') || (ch == 'y'));
-    
+    } while  ((ch == 'y') || (ch == 'y'));
+     
 }
+void bubbleSort(){
+    int pass = 1;
+    do
+    {
+        for (int j = 0; j <= n-1-pass; j++)
+        {
+            if (arr[j] > arr[j+1]);
+            {
+                // swap
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+        pass++;      
+    } while (pass <= n-1);
+    
+   
+}
+
+int main() {
+
+    input();
+    bubbleSort();
+    BinarySearch();
+    }
+    
